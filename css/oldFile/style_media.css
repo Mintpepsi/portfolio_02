@@ -1,0 +1,74 @@
+
+/* PC(1180-1680) CSS */
+/* @media all and (min-width: 1180px) and (max-width: 1550px) { */
+    @media all and (min-width: 1180px) and (max-width: 1680px) {
+        div#desktopBar {
+            width: 90%;
+        }
+        div#sub_myAccount {
+            width: 90%;
+        }
+        div#slideContentBox div.slideItem .slideItemSummary {
+            width: 40%;
+            /* border: 1px solid red; */
+        }
+        div#slideContent_MoveBox {
+            width: 87%;
+        }
+    }
+    
+    
+    /* // PC(1180-1550) CSS */
+    
+    
+    /* PC(768-1180) CSS */
+    
+    @media all and (min-width: 768px) and (max-width: 1180px) {
+        div#desktopBar {
+            width: 90%;
+        }
+        div#sub_game {
+            height: 60%;
+        }
+        div#sub_myAccount {
+            width: 90%;
+        }
+        div#slideContentBox div.slideItem .slideItemSummary {
+            width: 30%;
+            /* border: 1px solid red; */
+        }
+        div#slideContent_MoveBox {
+            width: 87%;
+        }
+        div.slideBtn {
+            width: 60px;
+            margin: 0 3px;
+        }
+    }
+    
+    
+    /* // PC(768-1180) CSS */
+    
+    
+    /* content off - all (-299) */
+    
+    @media all and (max-width: 299px) {
+        body * {
+            display: none;
+        }
+        body {
+            background-color: #0b0d12;
+        }
+        div#alert {
+            padding: 10px;
+            border: 1px solid #fff;
+            display: block;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 20px;
+        }
+    }
+    
+    /* // content off - all (-299) */

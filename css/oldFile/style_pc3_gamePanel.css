@@ -1,0 +1,267 @@
+/* gamePanel */
+
+div#gamePanel {
+    width: 100%;
+    /* height: 415px; */
+    padding-bottom: 98px;
+    border-top: 1px solid #004ca3;
+    background-color: #002650;
+    background-image: url(../images/bg/background-generic-landscape-short.31b43a7823e13c6383e5e613b04b5b58.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+div#gamePanelContent {
+    /* width: 1520px; */
+    width: 80%;
+    margin: 0 auto;
+    /* position: relative; */
+}
+
+
+/* gamePanel_title */
+
+div#gamePanel_title {
+    margin-top: 60px;
+}
+
+div#gamePanel_title>h1 {
+    margin-right: 10px;
+    display: inline-block;
+    font-size: 38px;
+    font-weight: normal;
+}
+
+div#gamePanel_title span {
+    color: #00bcff;
+    font-size: 15px;
+}
+
+div#gamePanel_title>h2 {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+
+/* // gamePanel_title */
+
+
+/* gamePanel_flexBox */
+
+div#gamePanel_outer_flexBox {
+    width: 100%;
+    height: 200px;
+    /* border: 1px solid red; */
+    position: relative;
+    top: 18px;
+    overflow: hidden;
+}
+
+div#gamePanel_flexBox {
+    /* width: 100%; */
+    /* border: 1px solid red; */
+    overflow: auto;
+}
+
+div#gamePanel_inner_flexBox {
+    width: 2040px;
+    height: 200px;
+    /* border: 1px solid #0ff; */
+    display: flex;
+}
+
+
+/* // gamePanel_flexBox */
+
+.gamePanel_flexContent {
+    /* width: 100%; */
+    width: 180px;
+    height: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.25);
+    background-size: 144% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+/* div.gamePanel_flexContent에 .active2 클래스가 추가될 경우 추가하고 덮어쓰는 CSS */
+
+.active2 {
+    border: 1px solid rgba(0, 157, 255, 1);
+}
+
+
+/* flex contents margin */
+
+.gamePanel_flexContent:not(:first-child) {
+    margin-left: 20px;
+}
+
+
+/* gamePanel_flexContent (background-image) */
+
+.gamePanel_flexContent:first-child {
+    background-image: url(../images/gamepanel/gp_1_ow2.jpg);
+}
+
+.gamePanel_flexContent:nth-child(2) {
+    background-image: url(../images/gamepanel/gp_2_ow.jpg);
+}
+
+.gamePanel_flexContent:nth-child(3) {
+    background-image: url(../images/gamepanel/gp_3_wow.jpg);
+}
+
+.gamePanel_flexContent:nth-child(4) {
+    background-image: url(../images/gamepanel/gp_4_hs.jpg);
+}
+
+.gamePanel_flexContent:nth-child(5) {
+    background-image: url(../images/gamepanel/gp_5_hos.jpg);
+}
+
+.gamePanel_flexContent:nth-child(6) {
+    background-image: url(../images/gamepanel/gp_6_wc3r.jpg);
+}
+
+.gamePanel_flexContent:nth-child(7) {
+    background-image: url(../images/gamepanel/gp_7_d4.jpg);
+}
+
+.gamePanel_flexContent:nth-child(8) {
+    background-image: url(../images/gamepanel/gp_8_di.jpg);
+}
+
+.gamePanel_flexContent:nth-child(9) {
+    background-image: url(../images/gamepanel/gp_9_sc2.jpg);
+}
+
+.gamePanel_flexContent:nth-child(10) {
+    background-image: url(../images/gamepanel/gp_10_sc.jpg);
+}
+
+.gamePanel_flexContent:last-child {
+    background-image: url(../images/gamepanel/gp_11_d3.jpg);
+}
+
+
+/* // gamePanel_flexContent (background-image) */
+
+
+/* div.modal */
+
+.active2 div.modal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    /* filter: brightness(0.25); */
+}
+
+
+/* // div.modal */
+
+
+/* div.content */
+
+.gamePanel_flexContent div.content {
+    padding: 20px 14px 0;
+    position: relative;
+    opacity: 0;
+}
+
+.active2 div.content {
+    opacity: 1;
+}
+
+.gamePanel_flexContent div.content a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.gamePanel_flexContent div.content a:first-child {
+    width: 100%;
+    padding: 4px 10px;
+    border: 1px solid rgba(0, 157, 255, 1);
+    background-color: #027bc5;
+    text-align: center;
+}
+
+.gamePanel_flexContent div.content a:first-child:hover {
+    transition: all 0.4s;
+    filter: brightness(120%);
+}
+
+.gamePanel_flexContent div.content hr {
+    border: none;
+    border-top: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.gamePanel_flexContent div.content .fas {
+    margin-right: 4px;
+    font-size: 20px;
+}
+
+.gamePanel_flexContent div.content div {
+    padding-left: 2px;
+    /* border: 1px solid #ff0; */
+    cursor: pointer;
+}
+
+.gamePanel_flexContent div.content div:hover .fas {
+    color: #ffffff;
+    transition: all 0.5s;
+}
+
+.gamePanel_flexContent div.content div .fa-mouse {
+    margin-left: 4px;
+    margin-right: 6px;
+}
+
+
+/* // div.content */
+
+div#gamePanel_MoveLeft {
+    padding: 14px 8px;
+    border: 1px solid rgba(0, 157, 255, 1);
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    text-align: center;
+    background-color: #027bc5;
+    cursor: pointer;
+    /* display: none; */
+}
+
+div#gamePanel_MoveLeft .fa-chevron-left {
+    color: #ffffff;
+}
+
+div#gamePanel_MoveRight {
+    padding: 14px 8px;
+    border: 1px solid rgba(0, 157, 255, 1);
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    text-align: center;
+    background-color: #027bc5;
+    cursor: pointer;
+}
+
+div#gamePanel_MoveRight .fa-chevron-right {
+    color: #ffffff;
+}
+
+
+/* // gamePanel */

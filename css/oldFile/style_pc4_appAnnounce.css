@@ -1,0 +1,40 @@
+/* appAnnounce */
+
+div#appAnnounce {
+    width: 100%;
+    height: 62px;
+    padding: 8px;
+    border-top: 1px solid rgba(117, 117, 117, 0.5);
+    border-bottom: 1px solid #004ca3;
+    background-color: #002650;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 19px;
+}
+
+div#appAnnounce>a {
+    position: relative;
+    top: -2px;
+}
+
+div#appAnnounce>a:hover>span:last-child,
+div#appAnnounce>a:hover .fab,
+div#appAnnounce>a:hover .fas {
+    transition: all 0.2s;
+    color: #ffffff !important;
+}
+
+div#appAnnounce>a>span:last-child {
+    color: #00aeff;
+}
+
+div#appAnnounce div {
+    height: 70%;
+    border-left: 1px solid rgba(117, 117, 117, 0.5);
+    margin: 0 14px;
+    transform: translateY(6px);
+    display: inline-block;
+}
+
+
+/* // appAnnounce */
