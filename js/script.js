@@ -410,9 +410,9 @@ $("#slideContentBox:first-child .slideItem").eq(slideImgNum).stop().fadeIn({ que
 
 // PC : 슬라이더 영역 진입 기준 버튼 활성화: 시작
 $("#slideContentLayout").hover(function() {
-    $(this).find("#slideContent_MoveBox").css({"display":"block"});
+    $(this).find("#slideContent_MoveBox").animate({"opacity":"1"}, 150);
 }, function() {
-    $(this).find("#slideContent_MoveBox").css({"display":"none"});
+    $(this).find("#slideContent_MoveBox").animate({"opacity":"0"}, 150);
 })
 // PC : 슬라이더 영역 진입 기준 버튼 활성화: 끝
 

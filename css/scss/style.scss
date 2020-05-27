@@ -171,7 +171,7 @@ header {
                 
                 &:nth-child(2) span:nth-child(3) {
                     left: 146px;
-                    // border: 1px solid red;
+    
                 }
                 
                 &:nth-child(5) span:nth-child(3) {
@@ -340,7 +340,6 @@ header {
         .item {
             width: 18%;
             // width: 200px;
-            // border: 1px solid red;
             margin-bottom: 34px;
             text-align: center;
     
@@ -493,13 +492,11 @@ header {
 
             &:nth-child(2) {
                 background: linear-gradient( to right, rgba(10, 20, 3, 1) 0%, rgba(10, 20, 3, 0.25) 10%, rgba(10, 20, 3, 0) 20%, rgba(10, 20, 3, 0) 30%, rgba(10, 20, 3, 0) 50%, rgba(10, 20, 3, 0) 70%, rgba(10, 20, 3, 0) 80%, rgba(10, 20, 3, 0.25) 90%, rgba(10, 20, 3, 1) 100%), url(../images/slideContent/wow_1.jpg);
-                background: linear-gradient( to right, rgba(10, 20, 3, 1) 0%, rgba(10, 20, 3, 0.25) 10%, rgba(10, 20, 3, 0) 20%, rgba(10, 20, 3, 0) 30%, rgba(10, 20, 3, 0) 50%, rgba(10, 20, 3, 0) 70%, rgba(10, 20, 3, 0) 80%, rgba(10, 20, 3, 0.25) 90%, rgba(10, 20, 3, 1) 100%), url(../images/slideContent/wow_1.jpg);
                 background-repeat: no-repeat;
                 background-position-x: 150px;
             }
 
             &:nth-child(3) {
-                background: linear-gradient( to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.25) 10%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.25) 90%, rgba(0, 0, 0, 1) 100%), url(../images/slideContent/codwz_2_1.jpg);
                 background: linear-gradient( to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.25) 10%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.25) 90%, rgba(0, 0, 0, 1) 100%), url(../images/slideContent/codwz_2_1.jpg);
                 background-repeat: no-repeat;
                 background-position-x: 150px;
@@ -591,6 +588,7 @@ header {
         left: 50%;
         top: -92%;
         transform: translateX(-50%);
+        opacity: 0;
         
         #slideContent_MoveLeft {
             padding: 15px 10px;
@@ -1397,7 +1395,6 @@ footer {
         display: block !important;
 
         position: absolute;
-        // z-index: 10000;
 
         a {
             height: 100%;
@@ -1713,7 +1710,7 @@ footer {
                     background-repeat: no-repeat;
                 }
                 &:nth-child(3) {
-                    background: linear-gradient( to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 40%, rgba(0, 0, 0, 1) 100%), url(../images/slideContent/codwz_2_2.jpg);
+                    background: linear-gradient( to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 40%, rgba(0, 0, 0, 1) 100%), url(../images/slideContent/codwz_2_3.jpg);
                     background-size: 100% 100%;
                     background-repeat: no-repeat;
                 }
@@ -1772,21 +1769,66 @@ footer {
                 }
             }
         }
-    }
 
-    #slideContent_MoveBox {
-        width: 87% !important;
-    }
-    
-    // #slideContent_MoveLeft {
-    //     padding: 10px 4px 12px;
-    //     font-size: 30px;
-    // }
+        #slideContent_MoveBox {
+            width: 100%;
+            height: 200px;
+            position: relative;
+            left: 50%;
+            top: -182%;
+            transform: translateX(-50%);
+            
+            #slideContent_MoveLeft {
+                padding: 10px 14px 12px;
+                border: 1px solid rgba(128, 128, 128, 0.25);
 
-    // #slideContent_MoveRight {
-    //     padding: 10px 4px 12px;
-    //     font-size: 30px;
-    // }
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translate(0%, -50%);
+
+                font-size: 30px;
+                text-align: center;
+                background-color: rgba(0, 0, 0, 0.38);
+                cursor: pointer;
+                
+                .fa-chevron-left {
+                    color: #009dff;
+                    transform: translateX(-50%);
+                }
+            
+                &:hover .fa-chevron-left {
+                    transition: all 0.4s linear;
+                    filter: brightness(150%);
+                }
+            }
+        
+            #slideContent_MoveRight {
+                padding: 10px 14px 12px;
+                border: 1px solid rgba(128, 128, 128, 0.25);
+
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translate(-100%, -50%);
+
+                font-size: 30px;
+                text-align: center;
+                background-color: rgba(0, 0, 0, 0.38);
+                cursor: pointer;
+
+                .fa-chevron-right {
+                    color: #027bc5;
+                    transform: translateX(-50%);
+                }
+                
+                &:hover .fa-chevron-right {
+                    transition: all 0.4s linear;
+                    filter: brightness(150%);
+                }
+            }
+        }
+    }
 
     #slideBtnLayout {
         width: 100%;
@@ -1978,7 +2020,6 @@ footer {
         
         #employment_info {
             width: 90%;
-            // border: 1px solid red;
             margin: 0;
             // top: 80%;
             top: 50%;
@@ -2061,7 +2102,7 @@ footer {
                     background-repeat: no-repeat;
                 }
                 &:nth-child(3) {
-                    background: linear-gradient( to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 40%, rgba(0, 0, 0, 1) 100%), url(../images/slideContent/codwz_2_2.jpg);
+                    background: linear-gradient( to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 40%, rgba(0, 0, 0, 1) 100%), url(../images/slideContent/codwz_2_3.jpg);
                     background-size: 100% 100%;
                     background-repeat: no-repeat;
                 }
