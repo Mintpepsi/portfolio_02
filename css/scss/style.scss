@@ -169,17 +169,8 @@ header {
                     display: none;
                 }
                 
-                &:nth-child(2) span:nth-child(3) {
-                    left: 146px;
-    
-                }
-                
-                &:nth-child(5) span:nth-child(3) {
-                    left: 407px;
-                }
-                
-                &:nth-child(8) span:nth-child(3) {
-                    left: 55px;
+                .toolTip {
+                    right: -2px;
                 }
             }
         }

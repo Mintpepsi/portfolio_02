@@ -168,16 +168,8 @@ header #desktopBar ul li span:nth-child(3) {
   display: none;
 }
 
-header #desktopBar ul li:nth-child(2) span:nth-child(3) {
-  left: 146px;
-}
-
-header #desktopBar ul li:nth-child(5) span:nth-child(3) {
-  left: 407px;
-}
-
-header #desktopBar ul li:nth-child(8) span:nth-child(3) {
-  left: 55px;
+header #desktopBar ul li .toolTip {
+  right: -2px;
 }
 
 #sub_game {
