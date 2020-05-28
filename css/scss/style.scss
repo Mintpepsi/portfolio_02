@@ -1865,7 +1865,7 @@ footer {
                 background: hsla(0, 0%, 50%, 0.1);
                 transition: all .15s linear;
 
-                span:last-child, i {
+                span:nth-last-child(2), i {
                     transition: all 0.2s linear;
                     color: #ffffff !important;
                 }

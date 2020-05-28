@@ -1841,7 +1841,7 @@ footer #companyInfo span {
     -webkit-transition: all .15s linear;
     transition: all .15s linear;
   }
-  #appAnnounceForMobile a:hover span:last-child, #appAnnounceForMobile a:hover i {
+  #appAnnounceForMobile a:hover span:nth-last-child(2), #appAnnounceForMobile a:hover i {
     -webkit-transition: all 0.2s linear;
     transition: all 0.2s linear;
     color: #ffffff !important;
